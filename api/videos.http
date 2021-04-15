@@ -1,0 +1,28 @@
+@api=http://localhost:5000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/6075187c0407ec2f684f20ab
+
+###create a video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=ILS4yYrxY6s",
+  "title": "bootcamp",
+  "description":"midudev"
+}
+
+###
+DELETE {{api}}/videos/6075187c0407ec2f684f20ab
+
+###
+PUT {{api}}/videos/60750c9211e658211006cf46
+Content-Type: application/json
+
+{
+  "title": "video fazt"
+}
+
