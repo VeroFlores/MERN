@@ -11,4 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(videosRoutes)
+app.get('/', (_, res) => {
+    res.send('<h1>Hello from Express Server!</h1>');
+  });
 export default app 
